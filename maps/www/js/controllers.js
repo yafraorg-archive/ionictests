@@ -117,7 +117,7 @@ angular.module('starter.controllers', [])
 				console.log("map: start loading js gmaps");
 				var script = $window.document.createElement('script');
 				script.type = 'text/javascript';
-				script.src = 'http://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyC7YQiQf3c_QWXlAvzlYJ8m27jLAIuSuvU&sensor=true&callback=InitMapCb';
+				script.src = 'http://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true&callback=InitMapCb';
 				$window.document.body.appendChild(script);
 				}
 
@@ -155,7 +155,7 @@ angular.module('starter.controllers', [])
 			// Info window trigger function 
 			function onItemClick(pin, label, datum, url) { 
 				// Create content  
-				var contentString = "Gfangene: " + label + "<br />Zyt: " + datum;
+				var contentString = "Marker: " + label + "<br />Date: " + datum;
 				// Replace our Info Window's content and position
 				infowindow.setContent(contentString);
 				infowindow.setPosition(pin.position);

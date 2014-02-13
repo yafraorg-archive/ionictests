@@ -1,15 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="org.yafra.ionictests.tabs" version="0.9.24" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="org.yafra.ionictests.maps" version="0.9.24" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>MapsApp</name>
     <description>
-        A sample Ionic Framework app using Cordova and AngularJS
+        A sample MAPS using Cordova, Ionic and AngularJS
     </description>
-    <author email="support@drifty.com" href="http://ionicframework.com/">
-        Ionic Framework Team
+    <author email="info@yafra.org" href="http://yafra.org/">
+        YAFRA
     </author>
     <content src="index.html" />
     <access origin="*" />
-     <feature name="http://api.phonegap.com/1.0/device" />
     <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
