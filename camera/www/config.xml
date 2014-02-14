@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="org.yafra.ionictests.cam" version="0.9.24" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>CamApp</name>
+    <description>
+        A sample Camera App using Cordova, Ionic and AngularJS
+    </description>
+    <author email="info@yafra.org" href="http://yafra.org/">
+        YAFRA
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+</widget>

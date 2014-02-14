@@ -13,7 +13,11 @@ run phonegap run ios or android within each directory to get the app running
 
 
 Install the device plugin with this command (only on tabs project)
-phonegap local plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-device.git
+* phonegap local plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-device.git
+
+Install the camera and file transfer plugins with this command (only on the camera project)
+* phonegap local plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-file-transfer.git
+* phonegap local plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-camera.git
 
 
 See also online examples:
