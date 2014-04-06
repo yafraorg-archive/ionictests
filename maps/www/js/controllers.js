@@ -3,7 +3,13 @@ angular.module('starter.controllers', [])
 /**
  * A simple example service that returns some data.
  */
-.controller('HelpCtrl', function($scope) {
+.controller('HomeCtrl', function($scope) {
+})
+
+/**
+ * A simple example service that returns some data.
+ */
+.controller('AppCtrl', function($scope) {
 })
 
 

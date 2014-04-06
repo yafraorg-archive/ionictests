@@ -4,19 +4,19 @@
   Each tab's child <nav-view> directive will have its own 
   navigation history that also transitions its views in and out.
 -->
-<tabs tabs-style="tabs-icon-top" tabs-type="tabs-default">
+<ion-tabs class="tabs-icon-top">
 
 
    <!-- Cam Tab -->
-  <tab title="Cam" icon="icon ion-map" href="#/tab/cam">
-    <nav-view name="cam-tab"></nav-view>
-  </tab>
+  <ion-tab title="Cam" icon="icon ion-map" href="#/tab/cam">
+    <ion-nav-view name="cam-tab"></ion-nav-view>
+  </ion-tab>
 
 
   <!-- About Tab -->
-  <tab title="About" icon="icon ion-search" href="#/tab/about">
-    <nav-view name="about-tab"></nav-view>
-  </tab>
+  <ion-tab title="About" icon="icon ion-search" href="#/tab/about">
+    <ion-nav-view name="about-tab"></ion-nav-view>
+  </ion-tab>
 
 
-</tabs>
+</ion-tabs>

@@ -5,7 +5,15 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
+angular.module('starter', ['ionic', 'starter.controllers'])
+
+.run(function($ionicPlatform) {
+	$ionicPlatform.ready(function() {
+		if(window.StatusBar) {
+			StatusBar.styleDefault();
+			}
+		});
+})
 
 
 .config(function($stateProvider, $urlRouterProvider) {
@@ -17,35 +25,45 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
   $stateProvider
 
     // setup an abstract state for the tabs directive
-    .state('tab', {
-      url: "/tab",
+    .state('app', {
+      url: "/app",
       abstract: true,
-      templateUrl: "templates/tabs.html"
+      templateUrl: "templates/menu.html",
+	  controller: 'AppCtrl'
     })
 
     // the pet tab has its own child nav-view and history
-    .state('tab.maps', {
-      url: '/maps',
+    .state('app.home', {
+      url: '/home',
       views: {
-        'maps-tab': {
-          templateUrl: 'templates/maps.html',
-          controller: 'MapsCtrl'
+        'menuContent': {
+          templateUrl: 'templates/home.html',
+          controller: 'HomeCtrl'
         }
       }
     })
 
-    .state('tab.about', {
-      url: '/about',
+    .state('app.login', {
+      url: '/login',
       views: {
-        'about-tab': {
-          templateUrl: 'templates/about.html',
-           controller: 'HelpCtrl'
+        'menuContent': {
+          templateUrl: 'templates/login.html',
+          controller: 'LoginCtrl'
+        }
       }
+    })
+    .state('app.maps', {
+      url: '/maps',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/maps.html',
+          controller: 'MapsCtrl'
+        }
       }
     });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/about');
+  $urlRouterProvider.otherwise('/app/home');
 
 });
 

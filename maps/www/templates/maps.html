@@ -1,15 +1,22 @@
 <!--
-  This template loads for the 'tab.about' state (app.js)
+  show a google maps and avoid any memory leaks - see controller and directive
 -->
-<view title="'Maps'">
-  <content has-header="true" has-tabs="true" scroll="false">
-<!-- map -->
-<app-map style="height:400px;margin:12px;box-shadow:0 3px 25px black;"
-    center="basel"
-    zoom="15"
-    markers="whoiswhere"
-	> 
-</app-map>
-<!--	<div id="map"></div> -->
-  </content>
-</view>
+<ion-view title="Maps">
+	<ion-nav-buttons side="left">
+		<button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
+	</ion-nav-buttons>
+
+	<ion-content class="has-header padding">
+
+	<!-- map -->
+	<app-map style="height:400px;margin:12px;box-shadow:0 3px 25px black;"
+		center="basel"
+		zoom="15"
+		markers="whoiswhere"
+		> 
+	</app-map>
+	<!--	<div id="map"></div> -->
+
+	</ion-content>
+
+</ion-view>
